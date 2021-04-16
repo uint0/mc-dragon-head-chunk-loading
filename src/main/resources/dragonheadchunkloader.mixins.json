@@ -1,12 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.fabricmc.example.mixin",
+  "package": "net.uint0.dragonheadchunkloader.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [
-  ],
-  "client": [
-    "ExampleMixin"
+  "mixins": [],
+  "server": [
+    "DragonHeadMixin"
   ],
   "injectors": {
     "defaultRequire": 1
