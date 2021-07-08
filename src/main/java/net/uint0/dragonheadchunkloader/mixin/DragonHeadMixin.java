@@ -28,6 +28,12 @@ public abstract class DragonHeadMixin extends BlockEntity {
         this.updateChunkLoading(this.powered);
     }
 
+    @Override
+    public void markRemoved() {
+        super.markRemoved();
+        this.updateChunkLoading(false);
+    }
+
     private void updateChunkLoading(boolean requestedLoading) {
         if(this.isLoadingChunk == requestedLoading) { return; }
 
